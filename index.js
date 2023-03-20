@@ -356,8 +356,14 @@ Use artistByCountry to do the following:
 For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
 
-function artistByCountry(/*Your Code Here*/) {
-     /*Your Code Here*/
+function artistByCountry(array, nationality) {
+     let tmpArray = [];
+     for (let item of array) {
+          if (item.nationality === nationality) {
+               tmpArray.push(item.name)
+          }
+     }
+     return tmpArray
 }
 
 
