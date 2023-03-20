@@ -245,10 +245,13 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-     /*Your Code Here*/
+function listOfNames(array) {
+     let tmpArray = [...array];
+     for (let i = 0; i < tmpArray.length; i += 1) {
+          tmpArray[i] = tmpArray[i].name;
+     }
+     return (tmpArray);
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
